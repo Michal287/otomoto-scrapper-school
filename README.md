@@ -19,8 +19,8 @@ pip install -r requirements.txt
 python scrapper.py --car_brands_path "otomoto_dictionary/car_brands.csv" 
                    --car_models_path "otomoto_dictionary/car_models" 
                    --db_port 5432 
-                   --db_username "master" 
-                   --db_password "IsthataSupra1234" 
-                   --db_table_name "postgres" 
-                   --db_hostname "130.162.226.117"
+                   --db_username "username" 
+                   --db_password "password" 
+                   --db_table_name "table_name" 
+                   --db_hostname "ip"
 ```
