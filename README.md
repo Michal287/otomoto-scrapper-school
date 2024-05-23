@@ -13,7 +13,7 @@ To run the script, i suggest to have a virtual environment installed.
 pip install -r requirements.txt
 ```
 
-2. Run script with your parametters
+2. Run script with your parametters. If you dont use database parameters then will be saved to file.
 
 ```
 python scrapper.py --car_brands_path "otomoto_dictionary/car_brands.csv" 

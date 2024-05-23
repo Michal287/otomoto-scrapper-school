@@ -127,9 +127,10 @@ def main():
     otomoto_scrapper.get_urls()
     otomoto_data = otomoto_scrapper.run()
 
-    otomoto_db = OtomotoDB()
-    otomoto_db.connect(args.db_hostname, args.db_table_name, args.db_username, args.db_password, args.db_port)
-    otomoto_db.send_data(otomoto_data)
+    if args.db_hostname is not None and args.db_table_name is not None and args.db_username is not None and args.db_password is not None and args.db_port is not None:
+        otomoto_db = OtomotoDB()
+        otomoto_db.connect(args.db_hostname, args.db_table_name, args.db_username, args.db_password, args.db_port)
+        otomoto_db.send_data(otomoto_data)
 
 
 if __name__ == '__main__':
